@@ -1,0 +1,75 @@
+.header {
+  width: 100%;
+  padding: 1em 0;
+  color: $white;
+  position: relative;
+  &__logo {
+    display: contents;
+    font-size: $font-xl;
+    font-weight: 600;
+    color: $black;
+    line-height: 36.65px;
+  }
+  &__navigation {
+    position: absolute;
+    right: 0;
+    display: block;
+    &__list {
+      text-align: right;
+      display: inline-block;
+      font-size: $font-md;
+      color: $black;
+      line-height: 26px;
+      &:not(:last-child) {
+        margin: 0 1em;
+      }
+      &:last-child {
+        margin-left: 1em;
+      }
+      &.active {
+        &::after {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          margin: 0.025em auto;
+          display: block;
+          background-color: $black;
+        }
+      }
+      &.active,
+      &:not(button) {
+        &:hover {
+          &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            margin: 0.025em auto;
+            display: block;
+            background-color: $black;
+          }
+        }
+      }
+      &--dropdown {
+        position: relative;
+        &::after {
+          content: "›";
+          font-weight: 700;
+          transform: rotate(90deg);
+          position: absolute;
+          right: 0;
+        }
+        &:hover {
+          &::after {
+            content: "›";
+            font-weight: 700;
+            transform: rotate(90deg);
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

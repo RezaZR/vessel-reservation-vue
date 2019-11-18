@@ -1,0 +1,31 @@
+.information {
+    display: block;
+    position: relative;
+    padding: 6em 0;
+    width: 100%;
+    background-color: $white-crystal;
+    &__card {
+        background-color: $white;
+        border-radius: 12px;
+        box-shadow: $shadow-bottom-5-grey-035;
+        padding: 2em;
+        & img {
+            display: block;
+            margin: 0 auto;
+        }
+        & p {
+            text-align: center;
+            &:nth-child(2) {
+                text-transform: capitalize;
+                font-weight: 700;
+                font-size: $font-lg;
+                color: $black;
+                margin: .75em 0;
+            }
+            &:nth-child(3) {
+                font-size: $font-sm;
+                color: $grey;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+$primary-font: "Raleway", sans-serif;
+
+$font-xs: 8px;
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 18px;
+$font-xl: 24px;
+$font-xxl: 32px;
+$font-xxxl: 40px;
+
+$primary-color: rgba(25, 118, 210, 1);
+$primary-color-hover: rgba(0, 75, 160, 1);
+
+$black: rgba(15, 21, 28, 1);
+$black-035: rgba(15, 21, 28, 0.35);
+
+$grey: rgba(156, 156, 156, 1);
+$grey-035: rgba(156, 156, 156, 0.35);
+
+$white: rgb(255, 255, 255);
+$white-075: rgba(255, 255, 255, 0.75);
+
+$white-smokey: rgb(231, 231, 231);
+$white-smokey-hover: rgb(204, 204, 204);
+
+$white-crystal: rgba(249, 250, 252, 1);
+$white-crystal-hover: rgb(242, 244, 248);
+
+$red: rgba(244, 67, 54, 1);
+$red-hover: rgba(186, 0, 13, 1);
+
+$shadow-bottom-5-black-035: 0px 3px 5px 0 $black-035;
+$shadow-bottom-5-grey-035: 0px 3px 5px 0 $grey-035;

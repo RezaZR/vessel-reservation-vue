@@ -1,18 +1,21 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+<template lang="pug">
+  div
+    HeaderMain
+    Headline
+    Information
+    Join
+    Trivia
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HeaderMain from "@/components/HeaderMain";
+import Headline from "@/components/Headline";
+import Information from "@/components/Information";
+import Join from "@/components/Join";
+import Trivia from "@/components/Trivia";
 
 export default {
   name: "home",
-  components: {
-    HelloWorld
-  }
+  components: { HeaderMain, Headline, Information, Join, Trivia }
 };
 </script>

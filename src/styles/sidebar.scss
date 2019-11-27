@@ -1,0 +1,65 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  box-shadow: $shadow-left-5-grey-035;
+  background-color: $white;
+  &__logo {
+    width: calc(100% - 15px);
+    font-size: $font-xl;
+  }
+  &__content {
+    width: calc(100% - 15px);
+    margin: 1em 0;
+    &__list {
+      display: block;
+      position: relative;
+      & a {
+        padding: 0.5em 0;
+        display: block;
+        & p {
+          color: $black-035;
+          font-size: $font-md;
+          letter-spacing: 0.15em;
+        }
+        & span {
+          position: absolute;
+          top: 0%;
+          right: 15px;
+          transform: translateY(-50%);
+          width: 4px;
+          height: calc(100% - 1em);
+          background-color: transparent;
+          border-radius: 50px;
+          transition: 0.5s ease all;
+          -moz-transition: 0.5s ease all;
+          -webkit-transition: 0.5s ease all;
+        }
+      }
+      &.active {
+        & a {
+          & p {
+            color: $black;
+          }
+          & span {
+            top: 50%;
+            background-color: $primary-color;
+          }
+        }
+      }
+      &:hover {
+        & a {
+          & p {
+            color: $black;
+          }
+          & span {
+            top: 50%;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
